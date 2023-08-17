@@ -8,22 +8,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/muller-narrow" rel="stylesheet">
+    <link rel="stylesheet" href="./animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <div class="header-container">
-            <div class="logo">
+        <div class="header-container" >
+            <div class="logo" data-aos="fade-right" data-aos-delay="1000">
                 <img src="/images/pizza_474.jpg" alt="logo">
                 <p>PIZZA CHEFF</p>
             </div>
             <nav>
-                <ul>
-                    <li>Пиццы</li>
-                    <li>Напитки</li>
-                    <li>Доставка и оплата</li>
-                    <li>Контакты</li>
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu">
+                    <li data-aos="fade-left" data-aos-delay="700">Пиццы</li>
+                    <li data-aos="fade-left" data-aos-delay="800">Напитки</li>
+                    <li data-aos="fade-left" data-aos-delay="900">Доставка и оплата</li>
+                    <li data-aos="fade-left" data-aos-delay="1000">Контакты</li>
                 </ul>
             </nav>
         </div>
@@ -31,7 +41,7 @@
     <main class="main">
         <!-- Section One -->
         <section class="section-one">
-            <div class="section-one__left">
+            <div class="section-one__left " data-aos="fade-right" data-aos-delay="500">
                 <div class="section-one__top">
                     <h1 class="section-one__title">Самая вкусная пицца в мире</h1>
                     <h2 class="section-one__subtitle">только в Pizza Cheff</h2>
@@ -48,6 +58,7 @@
                                 наивысшего качества</p>
                         </div>
                     </div>
+
                     <div class="card">
                         <div class="card__left">
                             <img src="./images/kitchen_pack_492.png" alt="cardImg1">
@@ -86,64 +97,72 @@
                     <button>Выбрать пиццу</button>
                 </div>
             </div>
-            <div class="section-one__right">
+            <div class="section-one__right" data-aos="fade-left" data-aos-delay="700" data-aos-once="true">
                 <img src="./images/pizza_big_484.png" alt="">
             </div>
         </section>
 
         <!-- Section Two -->
         <section class="section-two">
-            <h2 class="section-two__title">
+            <div class="overlay">
+                <div class="overlay-container">
+                    <img src="" alt="overlay-image">
+                    <h3 class="overlay-title"></h3>
+                    <p class="overlay-subtitle"></p>
+                </div>
+  
+            </div>
+            <h2 class="section-two__title" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
                 Выберите свою любимую пиццу
             </h2>
             <div class="section-two__container">
-                <div class="section-two__card">
+                <div class="section-two__card " data-aos="fade-right"  data-aos-duration="2000" data-aos-once="true">
                     <img src="./images/layer_2_508.png" alt="pizza1">
                     <h3 class="section-two__card-title">Мясная Делюкс</h3>
                     <p class="section-two__card-subtitle">Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы,
                         соус чили, ананасы</p>
                     <button class="section-two__card-button">В корзину</button>
                 </div>
-                <div class="section-two__card">
+                <div class="section-two__card " data-aos="fade-right"  data-aos-duration="2000" data-aos-once="true">
                     <img src="./images/layer_3_579.png" alt="pizza1">
                     <h3 class="section-two__card-title">Морская Премиум</h3>
                     <p class="section-two__card-subtitle">Перец, сыр, креветки, кальмары, мидии, лосось</p>
                     <button class="section-two__card-button">В корзину</button>
                 </div>
-                <div class="section-two__card">
+                <div class="section-two__card" data-aos="fade-left"  data-aos-duration="2000" data-aos-once="true">
                     <img src="./images/layer_4_580.png" alt="pizza1">
                     <h3 class="section-two__card-title">Бекон и Сосиски</h3>
                     <p class="section-two__card-subtitle">Бекон, сыр, сосиски, ананас, томатная паста</p>
                     <button class="section-two__card-button">В корзину</button>
                 </div>
-                <div class="section-two__card">
+                <div class="section-two__card" data-aos="fade-left"  data-aos-duration="2000" data-aos-once="true">
                     <img src="./images/layer_5_581.png" alt="pizza1">
                     <h3 class="section-two__card-title">Куриная Делюкс</h3>
                     <p class="section-two__card-subtitle">Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста
                     </p>
                     <button class="section-two__card-button">В корзину</button>
                 </div>
-                <div class="section-two__card">
+                <div class="section-two__card" data-aos="fade-right"  data-aos-duration="2000" data-aos-once="true">
                     <img src="./images/layer_6_582.png" alt="pizza1">
                     <h3 class="section-two__card-title">Барбекю Премиум</h3>
                     <p class="section-two__card-subtitle">Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус
                         чили</p>
                     <button class="section-two__card-button">В корзину</button>
                 </div>
-                <div class="section-two__card">
+                <div class="section-two__card" data-aos="fade-right"  data-aos-duration="2000" data-aos-once="true">
                     <img src="./images/layer_7_583.png" alt="pizza1">
                     <h3 class="section-two__card-title">Пепперони Дабл</h3>
                     <p class="section-two__card-subtitle">Пепперони, сыр, колбаса 2 видов: обжаренная и вареная</p>
                     <button class="section-two__card-button">В корзину</button>
                 </div>
-                <div class="section-two__card">
+                <div class="section-two__card" data-aos="fade-left"  data-aos-duration="2000" data-aos-once="true">
                     <img src="./images/layer_8_584.png" alt="pizza1">
                     <h3 class="section-two__card-title">Куриное трио</h3>
                     <p class="section-two__card-subtitle">Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр,
                         грибы, соус для пиццы</p>
                     <button class="section-two__card-button">В корзину</button>
                 </div>
-                <div class="section-two__card">
+                <div class="section-two__card" data-aos="fade-left"  data-aos-duration="2000" data-aos-once="true">
                     <img src="./images/layer_9_585.png" alt="pizza1">
                     <h3 class="section-two__card-title">Сырная</h3>
                     <p class="section-two__card-subtitle">Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный</p>
@@ -151,10 +170,38 @@
                 </div>
             </div>
         </section>
-        <section class="secction-three">
 
+        <!-- Section Three -->
+        <section class="section-three">
+                <div class="section-three-top">
+                    <div class="section-three_left "data-aos="fade-right"  data-aos-delay="500" data-aos-once="true"> 
+                        <h2 class="section-three_left-title">Хватит думать! </h2>
+                        <h3 class="section-three_left-subtitle">Доставим заказ за 30 минут!</h3>
+                        <p class="section-three_left-text">Мы  гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
+                    </div>
+                    <form class="section-three_inputs" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" onsubmit="sendReq(event)">
+                        <input id="nameInput" type="text" placeholder="Ваше имя" oninput="value = value.replace(/\./g,'')" required/>
+                        <input id="addressInput" type="text" placeholder="Адрес доставки" required>
+                        <input id="phoneInput"   type="tel" placeholder="Телефон" required>
+                        <button>Оформить заказ</button>
+                    </form>
+                </div>
+             <div class="section-three-image" data-aos="fade-left"  data-aos-delay="300" data-aos-once="true">
+                <img src="./images/pizzzzza_660.png" alt="pizza">
+             </div>
+            </div>
         </section>
+        <div id="popup" >
+            Спасибо за заказ!
+        </div>
     </main>
-</body>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+      <script src="script.js"></script>
+   
+</body>
 </html>
